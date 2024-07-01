@@ -135,3 +135,17 @@ cacheDirectory: true 可以开启缓存，当代码没有变化的时候，可�
 
 对于babel配置复杂的情况，可以再根目录建立一个babel的配置文件，babel.config.js
 在这个文件里面进行配置
+
+### 文件监听
+npx webpack --watch
+在我们的工程代码修改时，会自动重新构建出新的打包文件
+
+安装 webpack-dev-server
+运行 npx webpack-dev-server 启动
+打开 http://localhost:8080/ 进行观察
+
+### source map
+编译打包后，浏览器查看源文件
+
+通过webpack-dev-server开启的服务，生成的source map文件直接放在内存里，所以在项目工程目录是看不到这个文件的。
+使用npx webpack命令打包，这个时候就会看到磁盘工程目录新生成了bundle.js.map这个文件，这个就是source map文件
