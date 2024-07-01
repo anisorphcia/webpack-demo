@@ -126,3 +126,5 @@ rules: [{
     }
   }]
 ```
+
+#### babel-loader
