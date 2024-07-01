@@ -128,3 +128,10 @@ rules: [{
 ```
 
 #### babel-loader
+3-2 3-3 查看示例
+使用babel-loader后，可将 es6 语法转换为 es5
+选用此预设可以进行转码 @babel/preset-env
+cacheDirectory: true 可以开启缓存，当代码没有变化的时候，可以使用上次的打包
+
+对于babel配置复杂的情况，可以再根目录建立一个babel的配置文件，babel.config.js
+在这个文件里面进行配置
