@@ -1,4 +1,4 @@
 // import {name } from './b.js'
-import './b.css'
+import '../assets/b.css'
 
 // console.log(name)
