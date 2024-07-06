@@ -122,7 +122,6 @@ function _sample() {
   return _sample.apply(this, arguments);
 }
 console.log('start');
-debugger;
 sample();
 
 /***/ })
